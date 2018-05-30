@@ -1,0 +1,8 @@
+<div class="movie-card-container">
+  <mat-card *ngFor="let movie of movies" class="movies-card">
+      <img src="{{movie.img}}">
+    <h3>{{ movie.title }} , {{ movie.year }}</h3>
+    <p>descreption:{{ movie.descrShort }} </p>
+    <p>price: {{ movie.price }}$</p>
+  </mat-card>
+</div>
