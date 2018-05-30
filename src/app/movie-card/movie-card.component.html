@@ -2,7 +2,8 @@
   <mat-card *ngFor="let movie of movies" class="movies-card">
       <img src="{{movie.img}}">
     <h3>{{ movie.title }} , {{ movie.year }}</h3>
-    <p>descreption:{{ movie.descrShort }} </p>
-    <p>price: {{ movie.price }}$</p>
+    <p><b>descreption:</b>{{ movie.descrShort }} </p>
+    <p><b>price:</b>{{ movie.price }}$</p>
+    <button (click)="selectMovie(movie.id)">Buy</button>
   </mat-card>
 </div>
